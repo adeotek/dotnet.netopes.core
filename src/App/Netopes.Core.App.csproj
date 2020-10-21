@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <OutputType>Library</OutputType>
-        <PackageId>NETopes.Core.App</PackageId>
+        <PackageId>Netopes.Core.App</PackageId>
         <PackageTags>netopes,core,application</PackageTags>
         <Title>NETopes Localization</Title>
         <Description>NETopes ASP.NET Core framework Core App package</Description>
