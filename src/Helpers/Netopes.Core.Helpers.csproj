@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <OutputType>Library</OutputType>
-        <PackageId>NETopes.Core.Helpers</PackageId>
+        <PackageId>Netopes.Core.Helpers</PackageId>
         <PackageTags>netopes,core,helpers</PackageTags>
         <Title>NETopes Core Helpers</Title>
         <Description>NETopes ASP.NET Core framework Core Helpers package</Description>
