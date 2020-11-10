@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <OutputType>Library</OutputType>
-        <PackageId>NETopes.Core.App</PackageId>
+        <PackageId>Netopes.Core.App</PackageId>
         <PackageTags>netopes,core,application</PackageTags>
         <Title>NETopes Localization</Title>
         <Description>NETopes ASP.NET Core framework Core App package</Description>
@@ -11,8 +11,8 @@
         <Company>AdeoTEK Software SRL</Company>
         <Authors>George Benjamin-Schonberger</Authors>
         <Copyright>Copyright © AdeoTEK Software SRL 2021</Copyright>
-        <AssemblyVersion>1.0.0.3</AssemblyVersion>
-        <FileVersion>1.0.0.3</FileVersion>
+        <AssemblyVersion>1.0.0.4</AssemblyVersion>
+        <FileVersion>1.0.0.4</FileVersion>
         <Version>1.0.0</Version>
         <PackageProjectUrl>https://github.com/adeotek/dotnet.netopes.core/</PackageProjectUrl>
         <PackageLicense>https://github.com/adeotek/dotnet.netopes.core/blob/main/README.md</PackageLicense>
@@ -20,7 +20,7 @@
         <RepositoryType>Git</RepositoryType>
         <PackageIcon>PackageIcon.png</PackageIcon>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageVersion>1.0.0-beta.1</PackageVersion>
+        <PackageVersion>1.0.0-beta.2</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
