@@ -13,7 +13,7 @@
         <Copyright>Copyright © AdeoTEK Software SRL 2021</Copyright>
         <AssemblyVersion>1.0.1.5</AssemblyVersion>
         <FileVersion>1.0.1.5</FileVersion>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <PackageProjectUrl>https://github.com/adeotek/dotnet.netopes.core/</PackageProjectUrl>
         <PackageLicense>https://github.com/adeotek/dotnet.netopes.core/blob/main/README.md</PackageLicense>
         <RepositoryUrl>https://github.com/adeotek/dotnet.netopes.core/</RepositoryUrl>
