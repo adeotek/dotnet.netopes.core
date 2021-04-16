@@ -49,14 +49,14 @@ namespace Netopes.Core.App.Services
             return ((DateTime) value).ToString($"{_appSettings.DateFormat} {_appSettings.TimeFormat}");
         }
 
-        public string AsDecimal(object value, int decimals, string defaultValue = null)
+        public string AsDecimal(object value, int decimals, string defaultValue = null, bool defaultForZero = false)
         {
             var format = $"{{0:#,##0{(decimals > 0 ? $".{new string('0', decimals)}" : string.Empty)}}}";
             
             return value switch
             {
-                decimal decimalValue => string.Format(_customNumberFormatInfo, format, value),
-                double doubleValue => string.Format(_customNumberFormatInfo, format, value),
+                decimal decimalValue => decimalValue == 0 && defaultForZero ? defaultValue : string.Format(_customNumberFormatInfo, format, value),
+                double doubleValue => doubleValue == 0 && defaultForZero ? defaultValue : string.Format(_customNumberFormatInfo, format, value),
                 _ => defaultValue ?? string.Empty
             };
         }
