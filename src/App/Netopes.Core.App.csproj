@@ -11,23 +11,23 @@
         <Company>AdeoTEK Software SRL</Company>
         <Authors>George Benjamin-Schonberger</Authors>
         <Copyright>Copyright © AdeoTEK Software SRL 2021</Copyright>
-        <AssemblyVersion>1.0.0.4</AssemblyVersion>
-        <FileVersion>1.0.0.4</FileVersion>
-        <Version>1.0.0</Version>
+        <AssemblyVersion>1.0.2.6</AssemblyVersion>
+        <FileVersion>1.0.2.6</FileVersion>
+        <Version>1.0.2</Version>
         <PackageProjectUrl>https://github.com/adeotek/dotnet.netopes.core/</PackageProjectUrl>
         <PackageLicense>https://github.com/adeotek/dotnet.netopes.core/blob/main/README.md</PackageLicense>
         <RepositoryUrl>https://github.com/adeotek/dotnet.netopes.core/</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
         <PackageIcon>PackageIcon.png</PackageIcon>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.0.2</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="5.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="5.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="5.0.5" />
+        <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="5.0.5" />
         <PackageReference Include="NETopes.Core.Helpers" Version="1.0.0" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
