@@ -11,9 +11,9 @@
         <Company>AdeoTEK Software SRL</Company>
         <Authors>George Benjamin-Schonberger</Authors>
         <Copyright>Copyright © AdeoTEK Software SRL 2021</Copyright>
-        <AssemblyVersion>1.0.1.13</AssemblyVersion>
-        <FileVersion>1.0.1.13</FileVersion>
-        <Version>1.0.1</Version>
+        <AssemblyVersion>1.0.2.13</AssemblyVersion>
+        <FileVersion>1.0.2.13</FileVersion>
+        <Version>1.0.2</Version>
         <PackageProjectUrl>https://github.com/adeotek/dotnet.netopes.core/</PackageProjectUrl>
         <PackageLicense>https://github.com/adeotek/dotnet.netopes.core/blob/main/README.md</PackageLicense>
         <RepositoryUrl>https://github.com/adeotek/dotnet.netopes.core/</RepositoryUrl>
