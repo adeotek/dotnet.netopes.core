@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Globalization;
-using Netopes.Core.App.Settings;
+using Netopes.Core.Abstraction.Settings;
 
 namespace Netopes.Core.App.Services
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.Json.Serialization;
 
-namespace Netopes.Core.App.Models
+namespace Netopes.Core.Abstraction.Models
 {
     public class DownloadFileModel
     {

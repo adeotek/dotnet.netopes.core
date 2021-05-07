@@ -1,4 +1,4 @@
-﻿namespace Netopes.Core.App.Settings
+﻿namespace Netopes.Core.Abstraction.Settings
 {
     public class ConnectionStrings
     {
