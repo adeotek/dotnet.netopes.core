@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace Netopes.Core.Abstraction.Models
 {
-    public class DownloadFileModel
+    public class DownloadFile
     {
         public Guid FileId { get; set; }
         public string FileName { get; set; }
