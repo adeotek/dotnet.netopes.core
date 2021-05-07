@@ -1,4 +1,4 @@
-﻿namespace Netopes.Core.Helpers.Email
+﻿namespace Netopes.Core.Abstraction.Settings
 {
     public class EmailSettings
     {

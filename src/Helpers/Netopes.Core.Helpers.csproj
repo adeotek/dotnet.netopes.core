@@ -11,8 +11,8 @@
         <Company>AdeoTEK Software SRL</Company>
         <Authors>George Benjamin-Schonberger</Authors>
         <Copyright>Copyright © AdeoTEK Software SRL 2021</Copyright>
-        <AssemblyVersion>1.0.2.13</AssemblyVersion>
-        <FileVersion>1.0.2.13</FileVersion>
+        <AssemblyVersion>1.0.2.14</AssemblyVersion>
+        <FileVersion>1.0.2.14</FileVersion>
         <Version>1.0.2</Version>
         <PackageProjectUrl>https://github.com/adeotek/dotnet.netopes.core/</PackageProjectUrl>
         <PackageLicense>https://github.com/adeotek/dotnet.netopes.core/blob/main/README.md</PackageLicense>
@@ -20,7 +20,7 @@
         <RepositoryType>Git</RepositoryType>
         <PackageIcon>PackageIcon.png</PackageIcon>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageVersion>1.0.1</PackageVersion>
+        <PackageVersion>1.0.2</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -34,6 +34,7 @@
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
         </PackageReference>
+        <PackageReference Include="NETopes.Core.Abstraction" Version="1.0.0" />
     </ItemGroup>
 
     <ItemGroup>

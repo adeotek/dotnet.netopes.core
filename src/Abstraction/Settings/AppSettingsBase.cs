@@ -1,6 +1,4 @@
-﻿using Netopes.Core.Helpers.Email;
-
-namespace Netopes.Core.App.Settings
+﻿namespace Netopes.Core.Abstraction.Settings
 {
     public class AppSettingsBase : IAppSettingsBase
     {

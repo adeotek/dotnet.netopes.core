@@ -3,8 +3,9 @@ using System.Threading.Tasks;
 using MailKit.Net.Smtp;
 using Microsoft.Extensions.Logging;
 using MimeKit;
+using Netopes.Core.Abstraction.Settings;
 
-namespace Netopes.Core.Helpers.Email
+namespace Netopes.Core.Helpers.Services
 {
     public class EmailSender
     {
