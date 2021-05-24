@@ -19,35 +19,27 @@ namespace Netopes.Core.App.Services
             };
         }
 
-        public string AsDate(object value, string defaultValue = null)
-        {
-            if (!(value is DateTime))
-            {
-                return defaultValue ?? string.Empty;
-            }
+        public string AsDate(object value, string defaultValue = null, bool toLocal = false)
+            => value is DateTime dateTime
+                ? toLocal
+                    ? dateTime.ToLocalTime().ToString(_appSettings.DateFormat) 
+                    : dateTime.ToString(_appSettings.DateFormat) 
+                : defaultValue ?? string.Empty;
 
-            return ((DateTime) value).ToString(_appSettings.DateFormat);
-        }
         
-        public string AsTime(object value, string defaultValue = null)
-        {
-            if (!(value is DateTime))
-            {
-                return defaultValue ?? string.Empty;
-            }
+        public string AsTime(object value, string defaultValue = null, bool toLocal = false)
+            => value is DateTime dateTime
+                ? toLocal
+                    ? dateTime.ToLocalTime().ToString(_appSettings.TimeFormat) 
+                    : dateTime.ToString(_appSettings.TimeFormat) 
+                : defaultValue ?? string.Empty;
 
-            return ((DateTime) value).ToString(_appSettings.TimeFormat);
-        }
-        
-        public string AsDateTime(object value, string defaultValue = null)
-        {
-            if (!(value is DateTime))
-            {
-                return defaultValue ?? string.Empty;
-            }
-
-            return ((DateTime) value).ToString($"{_appSettings.DateFormat} {_appSettings.TimeFormat}");
-        }
+        public string AsDateTime(object value, string defaultValue = null, bool toLocal = false)
+            => value is DateTime dateTime
+                ? toLocal
+                    ? dateTime.ToLocalTime().ToString($"{_appSettings.DateFormat} {_appSettings.TimeFormat}") 
+                    : dateTime.ToString($"{_appSettings.DateFormat} {_appSettings.TimeFormat}") 
+                : defaultValue ?? string.Empty;
 
         public string AsDecimal(object value, int decimals, string defaultValue = null, bool defaultForZero = false)
         {
