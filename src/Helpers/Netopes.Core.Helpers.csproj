@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <OutputType>Library</OutputType>
         <PackageId>Netopes.Core.Helpers</PackageId>
         <PackageTags>netopes,core,helpers</PackageTags>
@@ -11,27 +11,27 @@
         <Company>AdeoTEK Software SRL</Company>
         <Authors>George Benjamin-Schonberger</Authors>
         <Copyright>Copyright © AdeoTEK Software SRL 2021</Copyright>
-        <AssemblyVersion>1.0.3.15</AssemblyVersion>
-        <FileVersion>1.0.3.15</FileVersion>
-        <Version>1.0.3</Version>
+        <AssemblyVersion>1.6.0.16</AssemblyVersion>
+        <FileVersion>1.6.0.16</FileVersion>
+        <Version>1.6.0</Version>
         <PackageProjectUrl>https://github.com/adeotek/dotnet.netopes.core/</PackageProjectUrl>
         <PackageLicense>https://github.com/adeotek/dotnet.netopes.core/blob/main/README.md</PackageLicense>
         <RepositoryUrl>https://github.com/adeotek/dotnet.netopes.core/</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
         <PackageIcon>PackageIcon.png</PackageIcon>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageVersion>1.0.3</PackageVersion>
+        <PackageVersion>1.6.0</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="MailKit" Version="2.12.0" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
-        <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+        <PackageReference Include="MailKit" Version="2.15.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+        <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
         <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
         <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
-        <PackageReference Include="Microsoft.Extensions.Primitives" Version="5.0.1" />
-        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All">
+        <PackageReference Include="Microsoft.Extensions.Primitives" Version="6.0.0" />
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="all">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
         </PackageReference>
         <PackageReference Include="NETopes.Core.Abstraction" Version="1.0.0" />

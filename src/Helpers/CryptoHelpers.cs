@@ -13,8 +13,7 @@ namespace Netopes.Core.Helpers
                 return input;
             }
             var bytes = Encoding.UTF8.GetBytes(input);
-            var hasher = new SHA256Managed();
-            var hash = hasher.ComputeHash(bytes);
+            var hash = SHA256.Create().ComputeHash(bytes);
             return hash.Aggregate(string.Empty, (current, b) => current + $"{b:x2}");
         }
     }
