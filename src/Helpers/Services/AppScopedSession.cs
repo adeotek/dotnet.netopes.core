@@ -8,8 +8,8 @@ namespace Netopes.Core.Helpers.Services
 {
     public class AppScopedSession
     {
-        protected ConcurrentDictionary<string, string> _sessionStringData = new ConcurrentDictionary<string, string>();
-        protected ConcurrentDictionary<string, object> _sessionObjectsData = new ConcurrentDictionary<string, object>();
+        protected ConcurrentDictionary<string, string?> _sessionStringData = new();
+        protected ConcurrentDictionary<string, object?> _sessionObjectsData = new();
         
         public bool IsInitialized { get; protected set; }
         
@@ -27,7 +27,7 @@ namespace Netopes.Core.Helpers.Services
             await Task.CompletedTask;
         }
 
-        public string this[string key]
+        public string? this[string key]
         {
             get
             {
@@ -35,7 +35,7 @@ namespace Netopes.Core.Helpers.Services
                 {
                     throw new ArgumentException("Null or empty key.");
                 }
-                return !_sessionStringData.ContainsKey(key) ? null : _sessionStringData[key];
+                return _sessionStringData.ContainsKey(key) ? _sessionStringData[key] : null;
             }
             set
             {
@@ -47,9 +47,9 @@ namespace Netopes.Core.Helpers.Services
             }
         }
 
-        public string GetValue(string key, string defaultValue = null) => this[key] ?? defaultValue;
+        public string? GetValue(string key, string? defaultValue = null) => this[key] ?? defaultValue;
 
-        public T GetValue<T>(string key, T defaultValue = default(T)) => this[key] == null ? defaultValue : JsonSerializer.Deserialize<T>(this[key]);
+        public T? GetValue<T>(string key, T? defaultValue = default) => this[key] == null ? defaultValue : JsonSerializer.Deserialize<T>(this[key] ?? string.Empty);
 
         public void SetValue(string key, object value)
         {
@@ -73,13 +73,13 @@ namespace Netopes.Core.Helpers.Services
                 return;
             }
             
-            if (!_sessionStringData.TryRemove(new KeyValuePair<string, string>(key, _sessionStringData[key])))
+            if (!_sessionStringData.TryRemove(new KeyValuePair<string, string?>(key, _sessionStringData[key])))
             {
                 _sessionStringData[key] = null;
             }
         }
 
-        public object GetObjectValue(string key, object defaultValue = null)
+        public object? GetObjectValue(string key, object? defaultValue = null)
         {
             if (string.IsNullOrWhiteSpace(key))
             {
@@ -115,7 +115,7 @@ namespace Netopes.Core.Helpers.Services
                 return;
             }
 
-            if (!_sessionObjectsData.TryRemove(new KeyValuePair<string, object>(key, _sessionObjectsData[key])))
+            if (!_sessionObjectsData.TryRemove(new KeyValuePair<string, object?>(key, _sessionObjectsData[key])))
             {
                 _sessionObjectsData[key] = null;
             }

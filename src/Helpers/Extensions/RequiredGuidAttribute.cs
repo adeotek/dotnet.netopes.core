@@ -7,7 +7,7 @@ namespace Netopes.Core.Helpers.Extensions
     {
         public RequiredGuidAttribute() => ErrorMessage = "{0} is required.";
 
-        public override bool IsValid(object value)
+        public override bool IsValid(object? value)
             => value is Guid && !Guid.Empty.Equals(value);
     }
 }
